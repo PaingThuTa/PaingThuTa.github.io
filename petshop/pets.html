@@ -22,6 +22,24 @@
 
     <main class="pets-container">
         <h2>Available Pets for Adoption</h2>
+        <div style="display: flex; gap: 24px; justify-content: center; margin-bottom: 20px;">
+            Type:
+            <div style="display: flex; gap: 15px;">
+                <div>
+                    <input type="checkbox" id="type-dogs" name="pet-type" value="Dog" checked /> Dogs
+                </div>
+                <div>
+                    <input type="checkbox" id="type-cats" name="pet-type" value="Cat" checked /> Cats
+                </div>
+                <div>
+                    <input type="checkbox" id="type-capybaras" name="pet-type" value="Capybara" checked />
+                    Capybaras
+                </div>
+                <div>
+                    <input type="checkbox" id="type-birds" name="pet-type" value="Bird" checked /> Birds
+                </div>
+            </div>
+        </div>
         <div id="pet-list">
             <!-- Pets will be loaded here dynamically -->
         </div>
@@ -47,6 +65,7 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
