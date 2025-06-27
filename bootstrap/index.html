@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>Bookstore Accessory Shop - Quotation</title>
+    <meta name="description" content="Bookstore accessory quotation">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <b>Paing Company LTD
+        <span style="float:right;font-size:30px;">
+            Paing's Bookstore
+        </span>
+    </b>
+
+    <p>
+        ABACUS CONDO
+        <br>ABAC Suvarnabhumi
+        <span style="float:right;">
+            <img src="./img/bookstore.jpg" style="width:100px;height:100px;">
+        </span>
+        <br>Bangkok, Thailand
+
+    </p>
+    <br>
+    <p>10560</p>
+    <p id="bottom-line">
+        Phone: 0961411384
+        <span class="tab">Mobile: 0961411384</span>
+        <span style="float: right;">
+            <span id="currentDate">
+                2025/6/25
+            </span>
+        </span>
+    </p>
+
+
+
+    <p class="thick" style="text-align: center;">
+        Currency THB
+        <span class="tab">No.:A000000</span>
+        <span style="float:left;">
+            Page No. 2
+        </span>
+    </p>
+
+    <p style="text-align: center;">
+        Ship to:
+        <span class="tab">Customer: John Reader</span>
+        <span class="tab"></span>
+        <span class="tab"></span>
+        <span class="tab"></span>
+        <span style="float:left;">
+            To:
+            <span class="tab">Ms. Book Lover</span>
+        </span>
+    </p>
+    <p style="text-align: center;">
+        123 Library Lane
+        <span style="float:left;">
+            <span class="tab"></span>  45 Bookworm Avenue</span>
+
+        <br>
+        Reading District
+        <span style="float:left;">
+            <span class="tab"></span>  Novel City</span>
+
+        <br>
+        10200
+        <span style="float:left;">
+            <span class="tab"></span>  Thailand</span>
+
+    </p>
+    <table class="center">
+        <thead>
+            <tr>
+                <th>Salesperson</th>
+                <th>Your P.O. No.</th>
+                <th>Date Shipped</th>
+                <th>Shipped Via</th>
+                <th>F.O.B Point</th>
+                <th>Terms</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="bottom-line">
+                <td class="data">Paing Thu Ta</td>
+                <td class="data">PO-BOOK-20240625</td>
+                <td class="data">2024/06/25</td>
+                <td class="data">Kerry Express</td>
+                <td class="data">Bangkok</td>
+                <td class="data">Cash on Delivery</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addProductModal">
+        Add Product
+    </button>
+    <table class="center">
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Unit Price (THB)</th>
+                <th>Amount (THB)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+
+        </tbody>
+        <tfooter>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr id="bottom-line">
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+
+            <tr id="sub-total">
+                <td colspan="4" class="data2 r colo"> Subtotal</td>
+                <td colspan="1" class="data2 r" id="bottom-line">
+                    <span id="subTotal">0.00</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="data2 r colo"> VAT (7%)</td>
+                <td colspan="1" class="data2 r" id="bottom-line">
+                    <span id="vatAmount">0.00</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="data2 r colo"> Shipping &amp; Handling</td>
+                <td colspan="1" class="data2 r" id="bottom-line">0.00</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="data2 r colo"> Total Due</td>
+                <td colspan="1" class="data2 r" id="bottom-line">
+                    <span id="totalDue">0.00</span>
+                </td>
+            </tr>
+        </tfooter>
+    </table>
+
+    <br>
+
+    <p class="cen">
+        <b>Make all checks payable to:</b>
+        <br><i>Paing Company LTD</i>
+        <br><b>If you have any question concerning this invoices, call:</b>
+        <br>
+        <br><b>THANK YOU FOR YOUR BUSINESS</b>
+    </p>
+
+
+    <footer>@PaingThuTa</footer>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="addProductModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="productForm">
+                        <div class="form-group">
+                            <label for="productSelect">Product</label>
+                            <select class="form-control" id="productSelect" required>
+                                <option value="">Select a product...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantityInput">Quantity</label>
+                            <input type="number" class="form-control" id="quantityInput" min="1" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="unitPriceDisplay">Unit Price (THB)</label>
+                            <input type="text" class="form-control" id="unitPriceDisplay" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="amountDisplay">Amount (THB)</label>
+                            <input type="text" class="form-control" id="amountDisplay" readonly>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="addProductBtn">Add Product</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

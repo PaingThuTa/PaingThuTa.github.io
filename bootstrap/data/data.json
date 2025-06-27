@@ -1,0 +1,32 @@
+[
+  {
+      "quantity": 1,
+      "description": "Premium Leather Bookmark Set (5 pieces)",
+      "unitPrice": 450.00,
+      "amount": 450.00
+  },
+  {
+      "quantity": 1,
+      "description": "Book Light with Adjustable Clip - LED Reading Light",
+      "unitPrice": 650.00,
+      "amount": 650.00
+  },
+  {
+      "quantity": 1,
+      "description": "Wooden Book Stand with Adjustable Angle",
+      "unitPrice": 1200.00,
+      "amount": 1200.00
+  },
+  {
+      "quantity": 1,
+      "description": "Book Cover Protector Set - Clear Plastic (Pack of 10)",
+      "unitPrice": 280.00,
+      "amount": 280.00
+  },
+  {
+      "quantity": 1,
+      "description": "Reading Glasses with Case - Blue Light Filter",
+      "unitPrice": 890.00,
+      "amount": 890.00
+  }
+]
