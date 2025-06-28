@@ -15,246 +15,250 @@
 </head>
 
 <body>
-    <b>Paing Company LTD
-        <span style="float:right;font-size:30px;">
-            Paing's Bookstore
-        </span>
-    </b>
+    <div class="invoice-container">
+        <!-- Header Section -->
+        <div class="invoice-header">
+            <h1 class="company-name">Paing Company LTD</h1>
+            <h1 class="store-name">
+                Paing's Bookstore
+                <img src="./img/bookstore.jpg" class="logo-img" style="margin-left: 15px;">
+            </h1>
+            <div style="clear: both;"></div>
+        </div>
 
-    <p>
-        ABACUS CONDO
-        <br>ABAC Suvarnabhumi
-        <span style="float:right;">
-            <img src="./img/bookstore.jpg" style="width:100px;height:100px;">
-        </span>
-        <br>Bangkok, Thailand
+        <!-- Company Details -->
+        <div class="company-details">
+            <p>
+                <strong>ABACUS CONDO</strong><br>
+                ABAC Suvarnabhumi<br>
+                Bangkok, Thailand<br>
+                10560
+            </p>
+        </div>
 
-    </p>
-    <br>
-    <p>10560</p>
-    <p id="bottom-line">
-        Phone: 0961411384
-        <span class="tab">Mobile: 0961411384</span>
-        <span style="float: right;">
-            <span id="currentDate">
-                2025/6/25
-            </span>
-        </span>
-    </p>
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p>
+                <strong>Phone:</strong> 0961411384
+                <span class="tab"><strong>Mobile:</strong> 0961411384</span>
+                <span style="float: right;">
+                    <strong>Date:</strong> <span id="currentDate">2025/6/25</span>
+                </span>
+            </p>
+            <div style="clear: both;"></div>
+        </div>
 
+        <!-- Invoice Information -->
+        <div class="invoice-info">
+            <p class="thick">
+                <strong>Currency:</strong> THB
+                <span class="tab"><strong>Invoice No.:</strong> A000000</span>
+                <span style="float: left;"><strong>Page No.:</strong> 2</span>
+            </p>
+            <div style="clear: both;"></div>
+        </div>
 
+        <!-- Address Section -->
+        <div class="address-section">
+            <div class="address-block">
+                <div class="address-label">Bill To:</div>
+                <p>
+                    Ms. Book Lover<br>
+                    45 Bookworm Avenue<br>
+                    Novel City<br>
+                    Thailand
+                </p>
+            </div>
+            <div class="address-block" style="text-align: right;">
+                <div class="address-label">Ship To:</div>
+                <p>
+                    <strong>Customer:</strong> John Reader<br>
+                    123 Library Lane<br>
+                    Reading District<br>
+                    10200
+                </p>
+            </div>
+        </div>
 
-    <p class="thick" style="text-align: center;">
-        Currency THB
-        <span class="tab">No.:A000000</span>
-        <span style="float:left;">
-            Page No. 2
-        </span>
-    </p>
-
-    <p style="text-align: center;">
-        Ship to:
-        <span class="tab">Customer: John Reader</span>
-        <span class="tab"></span>
-        <span class="tab"></span>
-        <span class="tab"></span>
-        <span style="float:left;">
-            To:
-            <span class="tab">Ms. Book Lover</span>
-        </span>
-    </p>
-    <p style="text-align: center;">
-        123 Library Lane
-        <span style="float:left;">
-            <span class="tab"></span>  45 Bookworm Avenue</span>
+        <!-- Order Details Table -->
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>Salesperson</th>
+                    <th>Your P.O. No.</th>
+                    <th>Date Shipped</th>
+                    <th>Shipped Via</th>
+                    <th>F.O.B Point</th>
+                    <th>Terms</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="bottom-line">
+                    <td class="data">Paing Thu Ta</td>
+                    <td class="data">PO-BOOK-20240625</td>
+                    <td class="data">2024/06/25</td>
+                    <td class="data">Kerry Express</td>
+                    <td class="data">Bangkok</td>
+                    <td class="data">Cash on Delivery</td>
+                </tr>
+            </tbody>
+        </table>
 
         <br>
-        Reading District
-        <span style="float:left;">
-            <span class="tab"></span>  Novel City</span>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addProductModal">
+            Add Product
+        </button>
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>Quantity</th>
+                    <th>Description</th>
+                    <th>Unit Price (THB)</th>
+                    <th>Amount (THB)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="dataTable">
+
+            </tbody>
+            <tfooter>
+                <tr>
+                    <td class="data"><br></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                </tr>
+                <tr>
+                    <td class="data"><br></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                </tr>
+                <tr>
+                    <td class="data"><br></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                </tr>
+                <tr>
+                    <td class="data"><br></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                </tr>
+                <tr>
+                    <td class="data"><br></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                </tr>
+                <tr>
+                    <td class="data"><br></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                </tr>
+                <tr id="bottom-line">
+                    <td class="data"><br></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                    <td class="data"></td>
+                </tr>
+
+                <tr id="sub-total">
+                    <td colspan="4" class="data2 r colo"> Subtotal</td>
+                    <td colspan="1" class="data2 r" id="bottom-line">
+                        <span id="subTotal">0.00</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="data2 r colo"> VAT (7%)</td>
+                    <td colspan="1" class="data2 r" id="bottom-line">
+                        <span id="vatAmount">0.00</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="data2 r colo"> Shipping &amp; Handling</td>
+                    <td colspan="1" class="data2 r" id="bottom-line">0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="data2 r colo"> Total Due</td>
+                    <td colspan="1" class="data2 r" id="bottom-line">
+                        <span id="totalDue">0.00</span>
+                    </td>
+                </tr>
+            </tfooter>
+        </table>
 
         <br>
-        10200
-        <span style="float:left;">
-            <span class="tab"></span>  Thailand</span>
 
-    </p>
-    <table class="center">
-        <thead>
-            <tr>
-                <th>Salesperson</th>
-                <th>Your P.O. No.</th>
-                <th>Date Shipped</th>
-                <th>Shipped Via</th>
-                <th>F.O.B Point</th>
-                <th>Terms</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr id="bottom-line">
-                <td class="data">Paing Thu Ta</td>
-                <td class="data">PO-BOOK-20240625</td>
-                <td class="data">2024/06/25</td>
-                <td class="data">Kerry Express</td>
-                <td class="data">Bangkok</td>
-                <td class="data">Cash on Delivery</td>
-            </tr>
-        </tbody>
-    </table>
+        <!-- Payment Information -->
+        <div style="margin: 30px 0; padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
+            <p class="cen">
+                <strong>Make all checks payable to:</strong><br>
+                <em style="font-size: 18px; color: #2c5aa0;">Paing Company LTD</em><br><br>
+                <strong>If you have any questions concerning this invoice, please call us.</strong><br><br>
+                <strong style="color: #28a745;">THANK YOU FOR YOUR BUSINESS!</strong>
+            </p>
+        </div>
 
-    <br>
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addProductModal">
-        Add Product
-    </button>
-    <table class="center">
-        <thead>
-            <tr>
-                <th>Quantity</th>
-                <th>Description</th>
-                <th>Unit Price (THB)</th>
-                <th>Amount (THB)</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody id="dataTable">
+        <footer>@PaingThuTa</footer>
 
-        </tbody>
-        <tfooter>
-            <tr>
-                <td class="data"><br></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-            </tr>
-            <tr>
-                <td class="data"><br></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-            </tr>
-            <tr>
-                <td class="data"><br></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-            </tr>
-            <tr>
-                <td class="data"><br></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-            </tr>
-            <tr>
-                <td class="data"><br></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-            </tr>
-            <tr>
-                <td class="data"><br></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-            </tr>
-            <tr id="bottom-line">
-                <td class="data"><br></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-                <td class="data"></td>
-            </tr>
-
-            <tr id="sub-total">
-                <td colspan="4" class="data2 r colo"> Subtotal</td>
-                <td colspan="1" class="data2 r" id="bottom-line">
-                    <span id="subTotal">0.00</span>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4" class="data2 r colo"> VAT (7%)</td>
-                <td colspan="1" class="data2 r" id="bottom-line">
-                    <span id="vatAmount">0.00</span>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4" class="data2 r colo"> Shipping &amp; Handling</td>
-                <td colspan="1" class="data2 r" id="bottom-line">0.00</td>
-            </tr>
-            <tr>
-                <td colspan="4" class="data2 r colo"> Total Due</td>
-                <td colspan="1" class="data2 r" id="bottom-line">
-                    <span id="totalDue">0.00</span>
-                </td>
-            </tr>
-        </tfooter>
-    </table>
-
-    <br>
-
-    <p class="cen">
-        <b>Make all checks payable to:</b>
-        <br><i>Paing Company LTD</i>
-        <br><b>If you have any question concerning this invoices, call:</b>
-        <br>
-        <br><b>THANK YOU FOR YOUR BUSINESS</b>
-    </p>
-
-
-    <footer>@PaingThuTa</footer>
-
-    <div class="modal fade" tabindex="-1" role="dialog" id="addProductModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Add Product</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form id="productForm">
-                        <div class="form-group">
-                            <label for="productSelect">Product</label>
-                            <select class="form-control" id="productSelect" required>
-                                <option value="">Select a product...</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="quantityInput">Quantity</label>
-                            <input type="number" class="form-control" id="quantityInput" min="1" value="1" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="unitPriceDisplay">Unit Price (THB)</label>
-                            <input type="text" class="form-control" id="unitPriceDisplay" readonly>
-                        </div>
-                        <div class="form-group">
-                            <label for="amountDisplay">Amount (THB)</label>
-                            <input type="text" class="form-control" id="amountDisplay" readonly>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="addProductBtn">Add Product</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="modal fade" tabindex="-1" role="dialog" id="addProductModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Product</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="productForm">
+                            <div class="form-group">
+                                <label for="productSelect">Product</label>
+                                <select class="form-control" id="productSelect" required>
+                                    <option value="">Select a product...</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="quantityInput">Quantity</label>
+                                <input type="number" class="form-control" id="quantityInput" min="1" value="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="unitPriceDisplay">Unit Price (THB)</label>
+                                <input type="text" class="form-control" id="unitPriceDisplay" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="amountDisplay">Amount (THB)</label>
+                                <input type="text" class="form-control" id="amountDisplay" readonly>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="addProductBtn">Add Product</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
 
 </body>
 
